@@ -1,0 +1,4 @@
+#ifndef ENEMYHEAVYTANK_H
+#define ENEMYHEAVYTANK_H
+
+#endif // ENEMYHEAVYTANK_H

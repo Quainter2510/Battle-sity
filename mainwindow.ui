@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1250</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"> background-image: url(&quot;:/images/images/phon2.png&quot;);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stacked">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>1281</width>
+      <height>851</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QWidget" name="play">
+     <widget class="QGraphicsView" name="graphicsView">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>0</y>
+        <width>1050</width>
+        <height>800</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelTimer">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>30</y>
+        <width>91</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Rockwell Extra Bold</family>
+        <pointsize>22</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+
+color: white;</string>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelHp">
+      <property name="geometry">
+       <rect>
+        <x>1150</x>
+        <y>90</y>
+        <width>91</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Rockwell Extra Bold</family>
+        <pointsize>22</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+
+color: white;</string>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelKillNum">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>230</y>
+        <width>91</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Rockwell Extra Bold</family>
+        <pointsize>22</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+
+color: white;</string>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelPointers">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>490</y>
+        <width>91</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Rockwell Extra Bold</family>
+        <pointsize>18</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+
+color: white;</string>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelLevel">
+      <property name="geometry">
+       <rect>
+        <x>1150</x>
+        <y>370</y>
+        <width>91</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Rockwell Extra Bold</family>
+        <pointsize>22</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+
+color: white;</string>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelHp_3">
+      <property name="geometry">
+       <rect>
+        <x>1150</x>
+        <y>30</y>
+        <width>91</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Rockwell Extra Bold</family>
+        <pointsize>22</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+
+color: white;</string>
+      </property>
+      <property name="text">
+       <string>Hp</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelHp_4">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>180</y>
+        <width>91</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Rockwell Extra Bold</family>
+        <pointsize>22</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+
+color: white;</string>
+      </property>
+      <property name="text">
+       <string>Kills</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelHp_5">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>440</y>
+        <width>91</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Rockwell Extra Bold</family>
+        <pointsize>18</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+
+color: white;</string>
+      </property>
+      <property name="text">
+       <string>Points</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelHp_6">
+      <property name="geometry">
+       <rect>
+        <x>1150</x>
+        <y>320</y>
+        <width>91</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Rockwell Extra Bold</family>
+        <pointsize>20</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+
+color: white;</string>
+      </property>
+      <property name="text">
+       <string>Level</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="endGame">
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> background-image: url(&quot;:/images/images/overGamePhon.png&quot;);</string>
+     </property>
+     <widget class="QLabel" name="labelHp_2">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>600</y>
+        <width>251</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Rockwell Extra Bold</family>
+        <pointsize>22</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+
+color: white;</string>
+      </property>
+      <property name="text">
+       <string>Ваш результат: </string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelResult">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>600</y>
+        <width>131</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Rockwell Extra Bold</family>
+        <pointsize>22</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+
+color: white;</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="mainMenuBtn">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>710</y>
+        <width>341</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Tahoma</family>
+        <pointsize>26</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    qproperty-icon: url(&quot; &quot;); /* empty image  */
+	background-color: none;
+    qproperty-iconSize: 16px 16px; /* space for the background image */
+    background-image: url(&quot;:/images/images/bonus_star.png&quot;);
+    background-repeat: no-repeat;
+}
+
+QPushButton:hover {
+background-color:#002ead;
+    background-image: url(&quot;:/images/images/bonus_bomb.png&quot;);
+    background-repeat: no-repeat;
+} </string>
+      </property>
+      <property name="text">
+       <string>Главное меню</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="mainMenu">
+     <property name="styleSheet">
+      <string notr="true">background-color: none;</string>
+     </property>
+     <widget class="QPushButton" name="btn">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>220</y>
+        <width>451</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Tahoma</family>
+        <pointsize>36</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    qproperty-icon: url(&quot; &quot;); /* empty image  */
+	background-color: none;
+    qproperty-iconSize: 16px 16px; /* space for the background image */
+    background-image: url(&quot;:/images/images/bonus_star.png&quot;);
+    background-repeat: no-repeat;
+}
+
+QPushButton:hover {
+background-color:#002ead;
+    background-image: url(&quot;:/images/images/bonus_bomb.png&quot;);
+    background-repeat: no-repeat;
+} </string>
+      </property>
+      <property name="text">
+       <string>В бой</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="quitBtn">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>500</y>
+        <width>451</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Tahoma</family>
+        <pointsize>36</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    qproperty-icon: url(&quot; &quot;); /* empty image  */
+	background-color: none;
+    qproperty-iconSize: 16px 16px; /* space for the background image */
+    background-image: url(&quot;:/images/images/bonus_star.png&quot;);
+    background-repeat: no-repeat;
+}
+
+QPushButton:hover {
+background-color:#002ead;
+    background-image: url(&quot;:/images/images/bonus_bomb.png&quot;);
+    background-repeat: no-repeat;
+} </string>
+      </property>
+      <property name="text">
+       <string>Выход</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="leftMapBtn">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>330</y>
+        <width>101</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgba(0, 0, 0, 0);
+    qproperty-iconSize: 0px 0px; /* space for the background image */
+    background-image: url(&quot;:/images/images/big_left_arrow.png&quot;);
+    background-repeat: no-repeat;
+}
+
+QPushButton:hover {
+background-color: rgba(0, 0, 0, 0);
+qproperty-iconSize: 0px 0px;
+    background-image: url(&quot;:/images/images/big_left_arrow_hover.png&quot;);
+    background-repeat: no-repeat;
+} </string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="rightMapBtn">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>330</y>
+        <width>91</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgba(0, 0, 0, 0);
+    qproperty-iconSize: 0px 0px; /* space for the background image */
+    background-image: url(&quot;:/images/images/big_right_arrow.png&quot;);
+    background-repeat: no-repeat;
+}
+
+QPushButton:hover {
+background-color: rgba(0, 0, 0, 0);
+qproperty-iconSize: 0px 0px;
+    background-image: url(&quot;:/images/images/big_right_arrow_hover.png&quot;);
+    background-repeat: no-repeat;
+} </string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="mapLabel">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>330</y>
+        <width>281</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Variable Display Semib</family>
+        <pointsize>22</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::DefaultContextMenu</enum>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	background-color: none;
+	color: rgb(255, 255, 255);
+}</string>
+      </property>
+      <property name="text">
+       <string>Случайная</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="leftLevelBtn">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>420</y>
+        <width>101</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgba(0, 0, 0, 0);
+    qproperty-iconSize: 0px 0px; /* space for the background image */
+    background-image: url(&quot;:/images/images/big_left_arrow.png&quot;);
+    background-repeat: no-repeat;
+}
+
+QPushButton:hover {
+background-color: rgba(0, 0, 0, 0);
+qproperty-iconSize: 0px 0px;
+    background-image: url(&quot;:/images/images/big_left_arrow_hover.png&quot;);
+    background-repeat: no-repeat;
+} </string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="rightLevelBtn">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>420</y>
+        <width>91</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgba(0, 0, 0, 0);
+    qproperty-iconSize: 0px 0px; /* space for the background image */
+    background-image: url(&quot;:/images/images/big_right_arrow.png&quot;);
+    background-repeat: no-repeat;
+}
+
+QPushButton:hover {
+background-color: rgba(0, 0, 0, 0);
+qproperty-iconSize: 0px 0px;
+    background-image: url(&quot;:/images/images/big_right_arrow_hover.png&quot;);
+    background-repeat: no-repeat;
+} </string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="levelLabel">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>420</y>
+        <width>281</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Variable Display Semib</family>
+        <pointsize>22</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::DefaultContextMenu</enum>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	background-color: none;
+	color: rgb(255, 255, 255);
+}</string>
+      </property>
+      <property name="text">
+       <string>Средне</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1250</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
